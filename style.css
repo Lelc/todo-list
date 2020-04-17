@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(120deg, #f6d365, #fda085);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 1.5rem;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: #fff;
+}
+
+form button {
+  color: #fda085;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+form button:hover {
+  color: #fff;
+  background: #fda085;
+}
+
+.todo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+.todo {
+  margin: 0.5rem;
+  background: #fff;
+  color: #000;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s ease all;
+}
+.todo li {
+  flex: 1;
+}
+.todo-item {
+  padding: 0 0.5rem;
+}
+
+.completed-button,
+.delete-button {
+  background: #ff6f47;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.completed-button {
+  background: #1d9b3d;
+}
+.fas {
+  pointer-events: none;
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.delete {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
