@@ -95,16 +95,8 @@ function saveLocalTodos(todo) {
     todos = JSON.parse(localStorage.getItem("todos"));
   }
 
-  const task = todo;
-  console.log("oi" + task);
-  if (todos.includes(task)) {
-    alert("task already in the list");
-    return false;
-  } else {
-    todos.push(todo);
-    localStorage.setItem("todos", JSON.stringify(todos));
-    return true;
-  }
+  todos.push(todo);
+  localStorage.setItem("todos", JSON.stringify(todos));
 }
 
 function getTodos() {
